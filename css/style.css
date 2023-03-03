@@ -83,7 +83,17 @@ body {
     min-height: 100%;
 }
 
-
+a {
+    color: #4985ff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 202px;
+    height: 20px;
+    text-decoration: underline;
+}
+a:hover {
+    color: #d579f7;
+}
 .nav {
     width: 800px;
     display: flex;
@@ -103,16 +113,27 @@ body {
     justify-content: space-between;
     font-size: 16px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 20px 0;
     width: 500px;
 }
 
-.nav-link {
+.nav__link {
     color: #ffffff;
+    text-decoration: none;
+}
+.nav__link:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .nav__item {
     list-style-type: none;
+    padding-bottom: 40px;
+    
+}
+
+.nav__item:hover {
+    border-bottom: 2px solid #ffffff;
 }
 
 .header {
@@ -126,8 +147,6 @@ body {
     align-items: center;
     height: 900px;
     justify-content: center;
-    /* padding-top: 100px; ублюдский блок получился, там ниже получше */
-    /* убери паддинг и выровни флексом */
 }
 
 .header-content {
@@ -149,7 +168,6 @@ body {
 }
 
 
-/* ??? */
 .header__text {
     font-size: 48px;
     max-width: 830px;
@@ -158,7 +176,7 @@ body {
 }
 
 .button {
-    color: white;
+    color: #ffffff;
     text-align: center;
     display: block;
     font-size: 16px;
@@ -168,13 +186,24 @@ body {
     border-radius: 30px;
 }
 
+button:hover {
+    background: #7990f7;
+}
+
+button:active {
+    background: #ffffff;
+    color: #4985ff;
+    border: 1px double #4985ff; 
+}
+
 .createApp {
     display: flex;
 }
 .creatApp__textBlock {
     max-width: 1113px;
     margin: 0px auto;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 .creatApp__header {
 }
@@ -198,7 +227,7 @@ body {
 }
 .createApp__colomn {
     flex: 0 0 33.333%;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 .item {
 }
@@ -208,6 +237,7 @@ body {
 .createApp__icon {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 .creatApp__mix {
     margin-top: 40px;
@@ -217,7 +247,6 @@ body {
     margin-bottom: 12px;
 }
 .createApp__button {
-    margin-top: 55px;
     margin: 0px auto;
 }
 
@@ -237,8 +266,7 @@ body {
     justify-content: space-between;
 }
 .standart__twoBlock {
-    /* flex: 0 0 33.333%; */
-    flex: 0 0 40%;
+    flex: 0 0 33.333%;
 }
 .standart__twoBlocks__first {
     margin-top: 20px;
@@ -256,17 +284,7 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
-a {
-    color: #4985ff;
-    font-weight: 500;
-    font-size: 16px;
-    width: 202px;
-    height: 20px;
-    text-decoration: underline;
-}
-a:hover {
-    color: #d579f7;
-}
+
 .standart__twoBlocks__second {
 }
 .standart__row {
@@ -296,6 +314,7 @@ a:hover {
     width: 54px;
     height: 35px;
     margin-top: -3px;
+    padding-left: 20px;
 }
 .standart__our {
     color: #999999;
@@ -325,7 +344,6 @@ a:hover {
     margin-top: 60px;
 }
 .job__button {
-    padding-top: 13px;
     margin-top: 90px;
 }
 .button {
@@ -462,13 +480,17 @@ a:hover {
     justify-content: center;
     margin-top: 30px;
 }
-.send__mail {
+
+
+.send__input{
     border: 1px solid #f2f2f2;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
     width: 489px;
     height: 45px;
+    padding-left: 20px;
 }
+
 input::placeholder {
     font-size: 12px;
     color: #999999;
@@ -502,6 +524,7 @@ input::placeholder {
     margin: 0px auto;
     padding-top: 63px;
     padding-bottom: 70px;
+    border-bottom: 1px solid #E0E0E0;
 }
 .footer__colomn {
 }
@@ -539,20 +562,21 @@ input::placeholder {
 }
 
 .list {
-    list-style-image: url(/img/right-arrow.png); /* Путь к изображению маркера */
+    list-style-image: url(/img/right-arrow.svg); 
 }
 
 .list__mail {
-    list-style-image: url(/img/mail.png);
+    list-style-image: url(/img/mail.svg);
 }
 .list__mob {
-    list-style-image: url(/img/mob.png);
+    list-style-image: url(/img/mob.svg);
 }
 .list__address {
-    list-style-image: url(/img/adres.png);
+    list-style-image: url(/img/adress.svg);
 }
 
 .footer__link {
     color: #999999;
     text-decoration: none;
 }
+    
